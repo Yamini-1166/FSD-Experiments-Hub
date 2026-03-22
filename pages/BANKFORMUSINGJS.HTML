@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Form Using JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fc; /* Light and clean background */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .back-to-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(135deg, #00c853, #64dd17); /* Green gradient */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .back-to-home:hover {
+      background: linear-gradient(135deg, #43a047, #2e7d32); /* Darker shade on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      color: #0288d1;
+      font-size: 2em;
+      margin-bottom: 20px;
+      padding-top: 60px; /* Adds space for the button */
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    }
+    input, select, button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 95%;
+      border: 1px solid #0288d1;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #0288d1;
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #026aa7;
+    }
+    .error {
+      color: #e74c3c; /* Error color */
+      font-size: 14px;
+      margin: 5px 0;
+      display: none; /* Hidden by default */
+      text-align: left;
+    }
+    .success {
+      color: #27ae60; /* Success message color */
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Back to Home Button -->
+  <a href="../index.html" class="back-to-home">Back to Home</a>
+
+  <h1>Bank Form Using JS</h1>
+  <form id="bankForm" onsubmit="validateForm(event)">
+    <!-- Name Input -->
+    <input type="text" id="name" placeholder="Full Name (max 20 characters)" required>
+    <p id="nameError" class="error">Name must start with a letter and be less than 20 characters.</p>
+
+    <!-- Mobile Input -->
+    <input type="text" id="mobile" placeholder="Mobile Number (10 digits)" required>
+    <p id="mobileError" class="error">Mobile number must be exactly 10 numeric digits.</p>
+
+    <!-- Email Input -->
+    <input type="email" id="email" placeholder="Email Address" required>
+    <p id="emailError" class="error">Please enter a valid email address.</p>
+
+    <!-- Account Type -->
+    <select id="accountType" required>
+      <option value="">Select Account Type</option>
+      <option value="Savings">Savings Account</option>
+      <option value="Current">Current Account</option>
+      <option value="Fixed Deposit">Fixed Deposit</option>
+    </select>
+    <p id="accountTypeError" class="error">Please select an account type.</p>
+
+    <!-- Deposit Amount -->
+    <input type="number" id="deposit" placeholder="Deposit Amount (₹)" required>
+    <p id="depositError" class="error">Please enter a valid deposit amount greater than 0.</p>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+  <p id="successMessage" class="success"></p>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault();
+      let valid = true;
+
+      // Name Validation
+      const name = document.getElementById('name').value;
+      const nameError = document.getElementById('nameError');
+      const nameRegex = /^[A-Za-z][A-Za-z\s]*$/;
+      if (!name.match(nameRegex) || name.length > 20) {
+        nameError.style.display = 'block';
+        valid = false;
+      } else {
+        nameError.style.display = 'none';
+      }
+
+      // Mobile Number Validation
+      const mobile = document.getElementById('mobile').value;
+      const mobileError = document.getElementById('mobileError');
+      if (mobile.length !== 10 || isNaN(mobile)) {
+        mobileError.style.display = 'block';
+        valid = false;
+      } else {
+        mobileError.style.display = 'none';
+      }
+
+      // Email Validation
+      const email = document.getElementById('email').value;
+      const emailError = document.getElementById('emailError');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.match(emailRegex)) {
+        emailError.style.display = 'block';
+        valid = false;
+      } else {
+        emailError.style.display = 'none';
+      }
+
+      // Account Type Validation
+      const accountType = document.getElementById('accountType').value;
+      const accountTypeError = document.getElementById('accountTypeError');
+      if (!accountType) {
+        accountTypeError.style.display = 'block';
+        valid = false;
+      } else {
+        accountTypeError.style.display = 'none';
+      }
+
+      // Deposit Amount Validation
+      const deposit = document.getElementById('deposit').value;
+      const depositError = document.getElementById('depositError');
+      if (deposit <= 0) {
+        depositError.style.display = 'block';
+        valid = false;
+      } else {
+        depositError.style.display = 'none';
+      }
+
+      // Success Message
+      const successMessage = document.getElementById('successMessage');
+      if (valid) {
+        successMessage.textContent = 'Form submitted successfully!';
+      } else {
+        successMessage.textContent = '';
+      }
+    }
+  </script>
+</body>
+</html>

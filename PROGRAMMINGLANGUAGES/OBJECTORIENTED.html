@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object-Oriented Languages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff8e1, #ffe0b2); /* Warm light orange gradient */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff9800; /* Vibrant orange */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }.back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover {
+      background: #01579b;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-left: 10px solid #ff9800;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      line-height: 1.8;
+      text-align: left;
+    }
+    .intro h2 {
+      color: #ff9800;
+      font-size: 2.4em;
+      margin-bottom: 15px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #f57c00;
+      background-color: #ffe0b2;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px auto;
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 280px;
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #ffe0b2);
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .box h2 {
+      font-size: 1.8em;
+      color: #f57c00;
+      margin-bottom: 10px;
+    }
+    .box p {
+      font-size: 1em;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+    .box a {
+      text-decoration: none;
+      background-color: #ff9800;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .box a:hover {
+      background-color: #f57c00;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../pages/PLMAINPAGE.HTML" class="back-button">← Back</a>
+    <h1>Welcome to Object-Oriented Languages</h1>
+  </header>
+
+  <div class="intro">
+    <h2>Overview</h2>
+    <p>
+      Object-oriented programming (OOP) is a paradigm that organizes software around objects and data encapsulation. These languages emphasize concepts like inheritance, polymorphism, and modularity. Popular object-oriented languages include:
+      <span class="highlight">Java</span>, <span class="highlight">Python</span>, and <span class="highlight">C++</span>.
+    </p>
+  </div>
+
+  <div class="container">
+    <!-- Java Box -->
+    <div class="box">
+      <h2>Java</h2>
+      <p>A versatile OOP language used in enterprise applications and Android development.</p>
+      <a href="JAVA_PAGE.HTML">Learn More</a>
+    </div>
+
+    <!-- Python Box -->
+    <div class="box">
+      <h2>Python</h2>
+      <p>An easy-to-learn OOP language widely used in web development, AI, and data science.</p>
+      <a href="PYTHON_PAGE.HTML">Learn More</a>
+    </div>
+
+    <!-- C++ Box -->
+    <div class="box">
+      <h2>C++</h2>
+      <p>A high-performance OOP language commonly used in systems programming and game development.</p>
+      <a href="C++_PAGE.HTML">Learn More</a>
+    </div>
+  </div>
+</body>
+</html>

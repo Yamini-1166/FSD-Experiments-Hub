@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ratan Tata - Visionary Leader</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+        .header {
+            height: 20%;
+            background: linear-gradient(135deg, #81d4fa, #b3e5fc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: navy;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            height: 60%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            width: 15%;
+            height: auto;
+            border: 5px solid #81d4fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            background-color: #fff;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .footer {
+            height: 20%;
+            background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: navy;
+            font-size: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            background-color: navy;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .footer a:hover {
+            background-color: darkblue;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: navy;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: darkblue;
+        }
+    </style>
+    <script>
+        function goToHomePage() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</head>
+<body>
+    <button class="back-button" onclick="goToHomePage()">Back to Homepage</button>
+    <div class="container">
+        <div class="header">
+            <h1>Ratan Tata - Visionary Leader</h1>
+        </div>
+        <div class="content">
+            <img src="../assets/Ratan_Tata.jpg" alt="Ratan Tata" width="250">
+            <p>Ratan Tata is a pioneer of modern Indian industry, known for his bold vision and transformative leadership. Under his guidance, Tata Group expanded globally, acquiring iconic brands like Jaguar Land Rover and Corus Steel. His innovative approach brought the Tata Nano, the world's most affordable car, to life, revolutionizing transportation for millions.</p>
+            <p>Beyond business, Ratan Tata's commitment to philanthropy has uplifted countless lives through initiatives in education, healthcare, and rural development. His legacy continues to inspire generations to dream big and lead with integrity.</p>
+        </div>
+        <div class="footer">
+            <h2>Achievements:</h2>
+            <p>
+                Padma Bhushan: 2000 <br>
+                Padma Vibhushan: 2008 <br>
+                Honorary Knight Grand Cross (UK): 2014 <br>
+                Honorary Doctorates: From prestigious universities worldwide
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Ratan_Tata" target="_blank">Learn more on Wikipedia</a>
+        </div>
+    </div>
+</body>
+</html>
+

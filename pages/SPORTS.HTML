@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basketball - Rise and Shine</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff7e6; /* Subtle peachy-orange background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures footer stays at bottom */
+        }
+        header {
+            background-color: #f57c00; /* Vibrant orange header */
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        section.hero {
+            flex-grow: 1; /* Takes remaining space between header and footer */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #ffcc80, #ffe0b2); /* Gradient hero section */
+        }
+        section.hero img {
+            width: 25%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        section.hero h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        section.hero p {
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5;
+            color: #555;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        main ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        main ul li {
+            font-size: 16px;
+            margin: 10px 0;
+            background-color: #ffe0b2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #f57c00; /* Footer matches header */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            background-color: #d84315;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        footer a:hover {
+            background-color: #bf360c;
+        }
+        .back-button {
+            position: fixed; /* Keeps the button visible */
+            top: 20px;
+            left: 20px;
+            background-color: #d84315; /* Distinct button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #bf360c;
+        }
+    </style>
+    <script>
+        function goToHomePage() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</head>
+<body>
+    <!-- Back to Homepage Button -->
+    <button class="back-button" onclick="goToHomePage()">Back to Homepage</button>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Basketball - Rise and Shine</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="../assets/BasketBall.jpg" alt="Basketball" width="250">
+        <h1>Unleashing the Power of Sport</h1>
+        <p>Basketball brings communities together, inspires teamwork, and nurtures resilience. The game embodies dreams and fosters an indomitable spirit to shine on and off the court. It’s a sport that continues to empower individuals both mentally and physically.</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>India's Basketball Achievements</h2>
+        <ul>
+            <li>SABA Championship victories as regional champions.</li>
+            <li>Impressive representation in the FIBA Asia Cup.</li>
+            <li>Talented players like Satnam Singh and Amjyot Singh making a global mark.</li>
+            <li>Grassroots basketball programs are fostering young talent across India.</li>
+        </ul>
+        <p>These achievements showcase India's growing presence in the global basketball community, inspiring the next generation to pursue their passion for the game.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Want to explore more? Learn about Basketball in India <a href="https://en.wikipedia.org/wiki/Basketball_in_India" target="_blank">here</a>.</p>
+    </footer>
+</body>
+</html>

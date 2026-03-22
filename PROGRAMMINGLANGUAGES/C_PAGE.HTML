@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #5d636b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .back-button:hover { background: #01579b; }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+      text-align: left;
+    }
+
+    .section-title { margin-top: 10px; }
+
+    .overview {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .overview img { width: 50px; height: 50px; }
+
+    .roadmap, .use-cases, .quiz-section {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .roadmap { background: #e3f2fd; }
+    .use-cases { background: #e0f7fa; }
+    .quiz-section { background: #b3e5fc; }
+
+    .roadmap ul, .use-cases ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .roadmap li, .use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .roadmap img, .use-cases img { width: 40px; height: 40px; }
+
+    .quiz-section button {
+      background: #0277bd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .quiz-section button:hover { background: #01579b; }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Use a relative link for Back -->
+    <a href="PROCEDURAL.HTML" class="back-button">← Back</a>
+    <h1>C Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2 class="section-title">Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/code-file.png" alt="C Icon">
+      <p>C is a general-purpose, procedural programming language developed by Dennis Ritchie. It is widely known for its efficiency and is a foundation for many modern programming languages.</p>
+    </div>
+
+    <h2 class="section-title">Roadmap to Learn C Programming</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="Syntax Icon">
+          <p>Understand syntax, variables, and data types.</p>
+        </li>
+        <li>
+          <!-- Fixed: use a reliable loop/flow icon -->
+          <img src="https://img.icons8.com/ios-filled/50/flow-chart.png" alt="Control Flow Icon">
+          <p>Master control structures like loops and conditionals.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/memory-slot.png" alt="Memory Icon">
+          <p>Dive into memory management, pointers, and algorithms.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Use Cases</h2>
+    <div class="use-cases">
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/processor.png" alt="Systems Icon">
+          <p>Systems programming—OS kernels, drivers, and embedded systems.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/performance.png" alt="Performance Icon">
+          <p>High-performance applications where speed and control matter.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/library.png" alt="Libraries Icon">
+          <p>Foundational libraries and tools used by other languages.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://www.learn-c.org" target="_blank">Learn-C.org</a></li>
+      <li><a href="https://www.geeksforgeeks.org/c-programming-language/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="https://www.sololearn.com/C" target="_blank">SoloLearn</a></li>
+      <li><a href="https://www.simplilearn.com/c-tutorial-for-beginners" target="_blank">Simplilearn</a></li>
+      <li><a href="https://www.w3schools.com/c/" target="_blank">W3Schools</a></li>
+    </ul>
+     <p>*Multiple platforms are provided to help learners choose their preferred learning method comfortably.</p>
+
+
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+      <!-- Use a relative link to your test page -->
+      <button onclick="window.location.href='C_TEST.HTML'">Start Test</button>
+    </div>
+  </div>
+</body>
+</html>

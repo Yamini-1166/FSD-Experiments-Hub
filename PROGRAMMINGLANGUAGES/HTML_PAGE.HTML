@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecb3, #ffd54f);
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #ffa000, #ffc107);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover { background: #01579b; }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: left;
+    }
+    .content h2 {
+      color: #ffa000;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .overview, .roadmap li, .use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .overview img, .roadmap img, .use-cases img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .roadmap, .use-cases, .quiz-section {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .roadmap { background: #ffecb3; }
+    .use-cases { background: #fff8e1; }
+    .quiz-section { background: #ffe082; }
+
+    .roadmap h3, .quiz-section h3 {
+      color: #ffa000;
+      margin-bottom: 10px;
+    }
+
+    .roadmap ul, .use-cases ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quiz-section button {
+      background: #ffa000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+    .quiz-section button:hover { background: #f57c00; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="FRONTEND.HTML" class="back-button">← Back</a>
+    <h1>HTML Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2>Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/html-5.png" alt="HTML Icon">
+      <p>HTML (Hypertext Markup Language) is the standard language for creating web pages. It provides the basic structure of websites, which is enhanced and modified by other technologies like CSS and JavaScript. HTML is essential for defining the content and layout of web pages.</p>
+    </div>
+
+    <h2>Roadmap to Learn HTML</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="HTML Tags Icon">
+          <p>Learn basic tags and elements like &lt;html&gt; and &lt;body&gt;.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/paragraph.png" alt="Structure Icon">
+          <p>Understand the structure of web pages with headings, paragraphs, and sections.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/image.png" alt="Multimedia Icon">
+          <p>Incorporate multimedia elements like images and videos.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Use Cases</h2>
+    <div class="use-cases">
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/web-design.png" alt="Web Design Icon">
+          <p>Basic structure for web pages and applications.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/online.png" alt="Online Content Icon">
+          <p>Content creation for websites and blogs.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/training.png" alt="Learning Icon">
+          <p>Educational tools for learning web development.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+      <li><a href="https://html.com/" target="_blank">HTML.com</a> (Recommended)</li>
+      <li><a href="https://www.geeksforgeeks.org/html-tutorials/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="https://www.sololearn.com/html" target="_blank">SoloLearn</a></li>
+    </ul>
+    <p>*Explore different platforms to begin your journey in HTML!</p>
+
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+      <button onclick="window.location.href='HTML_TEST.HTML'">Start Test</button>
+    </div>
+  </div>
+</body>
+</html>

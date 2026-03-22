@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f3e5f5, #d1c4e9);
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #7e57c2, #5c6bc0);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover { background: #01579b; }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: left;
+    }
+    .content h2 {
+      color: #5c6bc0;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .overview, .roadmap li, .use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .overview img, .roadmap img, .use-cases img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .roadmap, .use-cases, .quiz-section {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .roadmap { background: #d1c4e9; }
+    .use-cases { background: #e8def8; }
+    .quiz-section { background: #b39ddb; }
+
+    .roadmap h3, .quiz-section h3 {
+      color: #7e57c2;
+      margin-bottom: 10px;
+    }
+
+    .roadmap ul, .use-cases ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quiz-section button {
+      background: #7e57c2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+    .quiz-section button:hover { background: #5c6bc0; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="OBJECTORIENTED.HTML" class="back-button">← Back</a>
+    <h1>Java Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2>Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/java-coffee-cup-logo.png" alt="Java Icon">
+      <p>Java is a versatile and platform-independent object-oriented programming language developed by James Gosling. It is widely used for developing enterprise applications, Android apps, and scalable backend systems. Java's "Write Once, Run Anywhere" approach makes it a popular choice for cross-platform development.</p>
+    </div>
+
+    <h2>Roadmap to Learn Java</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="Syntax Icon">
+          <p>Understand syntax, classes, and objects.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/class.png" alt="OOP Icon">
+          <p>Master object-oriented programming concepts.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/server.png" alt="Backend Icon">
+          <p>Explore backend development with frameworks like Spring.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Use Cases</h2>
+    <div class="use-cases">
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Enterprise Icon">
+          <p>Enterprise-grade applications and systems.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/android-os.png" alt="Mobile Icon">
+          <p>Android app development.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/data-center.png" alt="Scalability Icon">
+          <p>Backend servers for scalable systems.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://www.javatpoint.com/java-tutorial" target="_blank">JavaTPoint</a></li>
+      <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="https://www.sololearn.com/java" target="_blank">SoloLearn</a> (Recommended)</li>
+      <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools</a></li>
+      <li><a href="https://docs.oracle.com/en/java/" target="_blank">Official Java Docs</a></li>
+    </ul>
+    <p>*Multiple platforms are available to learn Java at your preferred pace and comfort!</p>
+
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+      <button onclick="window.location.href='JAVA_TEST.HTML'">Start Test</button>
+    </div>
+  </div>
+</body>
+</html>

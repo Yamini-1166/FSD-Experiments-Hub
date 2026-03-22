@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updated Time Table</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Arial, sans-serif;
+                background: linear-gradient(to bottom right, #e6f7ff, #ccf2ff);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                text-align: center;
+                width: 85%;
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                position: relative;
+            }
+            h1 {
+                margin: 5px 0;
+                color: #004d99;
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            h2 {
+                margin: 5px 0;
+                color: #0066cc;
+                font-size: 22px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            h3 {
+                margin: 8px 0;
+                color: #33adff;
+                font-size: 18px;
+            }
+            table {
+                margin: 20px auto;
+                width: 95%;
+                border-collapse: collapse;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            th, td {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+            th {
+                background: #1ca0a0;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            td {
+                font-size: 14px;
+                color: #333;
+            }
+            .lunch-cell {
+                writing-mode: vertical-lr;
+                text-align: center;
+                background: #f2f2f2;
+                font-weight: bold;
+                font-size: 14px;
+                color: #666;
+            }
+            .period-red { background-color: #ffcccc; }
+            .period-skyblue { background-color: #cce7ff; }
+            .period-green { background-color: #ccffcc; }
+            .period-yellow { background-color: #ffffcc; }
+            .period-purple { background-color: #e6ccff; }
+            .period-pink { background-color: #ffe6f2; }
+            .btn-home {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                padding: 10px 20px;
+                background-color: #0066cc;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            }
+            .btn-home:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            }
+        </style>
+        <script>
+            function goHome() {
+                window.location.href = "../index.html";
+            }
+        </script>
+    </head>
+    <body>
+        <button class="btn-home" onclick="goHome()">Back to Home</button>
+        <div class="container">
+            <h1>VIGNAN'S INSTITUTE OF INFORMATION AND TECHNOLOGY (A), Visakhapatnam</h1>
+            <h2>II B.TECH - II SEM ; ACADEMIC YEAR - 2024 - 2025 (2023 ADMITTED)</h2>
+            <h3>Department of Artificial Intelligence & Data Science</h3>
+            <h3>Time Table</h3>
+            <table>
+                <tr>
+                    <td colspan="3"></td>
+                    <th colspan="2">Section - II</th>
+                    <td colspan="4" align="right">w.e.f = 03/02/2025</td>
+                </tr>
+                <tr>
+                    <th>Time/Day</th>
+                    <th>10:00-10:50</th>
+                    <th>10:50-11:40</th>
+                    <th>11:40-12:30</th>
+                    <th>12:30-1:20</th>
+                    <th>1:20-2:10</th>
+                    <th>2:10-3:00</th>
+                    <th>3:00-3:50</th>
+                    <th>4:00-4:50</th>
+                </tr>
+                <tr align="center">
+                    <th>Mon</th>
+                    <td class="period-red">PAI</td>
+                    <td colspan="2" class="period-skyblue">FULL STACK (AB-04)</td>
+                    <td class="period-green">SDS</td>
+                    <td class="lunch-cell" rowspan="6">LUNCH</td>
+                    <td colspan="3" class="period-yellow">IDS (AB-05)</td>
+                </tr>
+                <tr align="center">
+                    <th>Tue</th>
+                    <td class="period-purple">DLCO</td>
+                    <td class="period-red">PAI</td>
+                    <td colspan="2" class="period-pink">DTI</td>
+                    <td class="period-yellow">IDS</td>
+                    <td class="period-green">MEFA</td>
+                    <td class="period-purple">DLCO</td>
+                </tr>
+                <tr align="center">
+                    <th>Wed</th>
+                    <td class="period-purple" colspan="2" align="center">Weekly Test</td>
+                    <td class="period-green">MEFA</td>
+                    <td class="period-yellow">IDS</td>
+                    <td class="period-red">PAI</td>
+                    <td class="period-purple">DLCO</td>
+                    <td class="period-skyblue">COUNS</td>
+                </tr>
+                <tr align="center">
+                    <th>Thur</th>
+                    <td class="period-green">SDS</td>
+                    <td class="period-skyblue">VS</td>
+                    <td class="period-purple">DLCO</td>
+                    <td class="period-yellow">IDS</td>
+                    <td class="period-red">PAI</td>
+                    <td class="period-green">MEFA</td>
+                    <td class="period-skyblue">SPORTS</td>
+                </tr>
+                <tr align="center">
+                    <th>Fri</th>
+                    <td class="period-green">MEFA</td>
+                    <td class="period-green">SDS</td>
+                    <td class="period-red">PAI</td>
+                    <td class="period-yellow">IDS</td>
+                    <td colspan="3" class="period-pink" align="center">PAI LAB (AB-05)</td>
+                </tr>
+                <tr align="center">
+                    <th>Sat</th>
+                    <td class="period-purple">DLCO</td>
+                    <td class="period-pink">IA</td>
+                    <td class="period-green">SDS</td>
+                    <td class="period-yellow">IDS</td>
+                    <td class="period-green">SDS</td>
+                    <td class="period-green">MEFA</td>
+                    <td class="period-skyblue">LIBRARY</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+

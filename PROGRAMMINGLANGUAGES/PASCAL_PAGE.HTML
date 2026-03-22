@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pascal Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff9e6, #ffe9b0);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f4a261;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .back-button:hover { background: #01579b; }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+      text-align: left;
+    }
+
+    .overview, .roadmap li, .use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .overview img, .roadmap img, .use-cases img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .roadmap, .use-cases, .quiz-section {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .roadmap { background: #fff3cd; }
+    .use-cases { background: #ffe0b2; }
+    .quiz-section { background: #ffd59e; }
+
+    .roadmap ul, .use-cases ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quiz-section button {
+      background: #e76f51;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .quiz-section button:hover { background: #a63f31; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="PROCEDURAL.HTML" class="back-button">← Back</a>
+    <h1>Pascal Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2>Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/book.png" alt="Pascal Icon">
+      <p>Pascal is a high-level procedural programming language developed by Niklaus Wirth. It is widely used for teaching programming concepts and emphasizes structured programming and data organization.</p>
+    </div>
+
+    <h2>Roadmap to Learn Pascal</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="Syntax Icon">
+          <p>Learn syntax, variables, and control structures.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/puzzle.png" alt="Functions Icon">
+          <p>Understand functions, procedures, and modular programming.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/flow-chart.png" alt="Algorithm Icon">
+          <p>Develop algorithms and solve programming challenges.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Use Cases</h2>
+    <div class="use-cases">
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/classroom.png" alt="Education Icon">
+          <p>Teaching programming concepts in schools and universities.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/system-task.png" alt="Systems Icon">
+          <p>Developing structured systems and applications.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/education.png" alt="Tools Icon">
+          <p>Building educational tools and systems.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://www.tutorialspoint.com/pascal/index.htm" target="_blank">TutorialsPoint</a></li>
+      <li><a href="https://www.geeksforgeeks.org/pascal-programming-language/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="http://www.pascal-central.com/" target="_blank">Pascal Central</a></li>
+    </ul>
+    <p>*Multiple platforms are provided to help learners choose their preferred learning method comfortably.</p>
+    
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+      <button onclick="window.location.href='PASCAL_TEST.HTML'">Start Test</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Languages - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #ffffff); /* Soft green gradient */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004d40; /* Deep teal */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+    header h1
+    {
+      margin: 0;
+      font-size: 2.8em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Elegant shadow for title */
+    }.back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover {
+      background: #01579b;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-left: 10px solid #004d40; /* Accent border for formality */
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Depth effect */
+      line-height: 1.8;
+      text-align: left;
+    }
+    .intro h2 {
+      color: #004d40;
+      font-size: 2.4em;
+      margin-bottom: 15px;
+    }
+    .intro p {
+      font-size: 1.2em;
+      color: #333333;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px auto;
+      flex-wrap: wrap; /* Adapts to smaller screens */
+    }
+    .box {
+      width: 280px;
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #e8f5e9); /* Soft gradient */
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Clean box shadow */
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .box:hover {
+      transform: translateY(-10px); /* Smooth lift effect */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .box h2 {
+      font-size: 1.8em;
+      color: #00695c; /* Rich teal accent */
+      margin-bottom: 10px;
+    }
+    .box p {
+      font-size: 1em;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+    .box a {
+      text-decoration: none;
+      background-color: #004d40;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+  .box a:hover {
+    background-color: #00251a; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="back-button">← Back</a>
+
+    <h1>Programming Languages</h1>
+  </header>
+
+  <div class="intro">
+    <h2>What Are Programming Languages?</h2>
+    <p>
+      Programming languages are tools used to instruct computers to perform specific tasks. They enable developers 
+      to create software, applications, websites, and much more. Each language is unique in its structure and 
+      functionality, allowing for specialized use cases.
+    </p>
+    <p>
+      On this platform, we explore three major categories: <strong>Structured/Procedural Languages</strong>, 
+      <strong>Object-Oriented Languages</strong>, and <strong>Frontend Technologies</strong>. These are key pillars 
+      of modern programming, each offering distinct features and benefits.
+    </p>
+  </div>
+
+  <div class="container">
+    <!-- Structured Languages Box -->
+    <div class="box">
+      <h2>Structured Languages</h2>
+      <p>Explore programming languages like C, Pascal, and COBOL used for structured programming.</p>
+      <a href="../PROGRAMMINGLANGUAGES/PROCEDURAL.HTML">Learn More</a>
+    </div>
+
+    <!-- Object-Oriented Languages Box -->
+    <div class="box">
+      <h2>Object-Oriented Languages</h2>
+      <p>Discover object-oriented languages such as Java, Python, and C++ that focus on objects and classes.</p>
+      <a href="../PROGRAMMINGLANGUAGES/OBJECTORIENTED.HTML">Learn More</a>
+    </div>
+
+    <!-- Frontend Technologies Box -->
+    <div class="box">
+      <h2>Frontend Technologies</h2>
+      <p>Dive into frontend technologies like HTML, CSS, and JavaScript that power web interfaces.</p>
+      <a href="../PROGRAMMINGLANGUAGES/FRONTEND.HTML">Learn More</a>
+    </div>
+  </div>
+</body>
+</html>

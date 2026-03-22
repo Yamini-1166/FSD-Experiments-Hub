@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Programming Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light turquoise gradient */
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0288d1, #03a9f4); /* Bright blue gradient */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin: 10px 0;
+      color: #0288d1;
+    }
+    .question label {
+      font-size: 1.1em;
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background: #0288d1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0277bd;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #0288d1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+ <a href="PYTHON_PAGE.HTML" class="back-button">← Back</a> <!-- Added Back Button -->
+    <h1>Python Programming Quiz</h1>
+  </header>
+
+  <div class="container">
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <h3>1. Who developed Python?</h3>
+        <label><input type="radio" name="q1" value="correct"> Guido van Rossum</label>
+        <label><input type="radio" name="q1" value="wrong"> James Gosling</label>
+        <label><input type="radio" name="q1" value="wrong"> Bjarne Stroustrup</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <h3>2. What is Python primarily known for?</h3>
+        <label><input type="radio" name="q2" value="correct"> Simplicity and readability</label>
+        <label><input type="radio" name="q2" value="wrong"> High performance</label>
+        <label><input type="radio" name="q2" value="wrong"> Game development</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <h3>3. What is the file extension for Python files?</h3>
+        <label><input type="radio" name="q3" value="wrong"> .pyth</label>
+        <label><input type="radio" name="q3" value="correct"> .py</label>
+        <label><input type="radio" name="q3" value="wrong"> .pcode</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <h3>4. Which keyword is used to define a function in Python?</h3>
+        <label><input type="radio" name="q4" value="correct"> def</label>
+        <label><input type="radio" name="q4" value="wrong"> func</label>
+        <label><input type="radio" name="q4" value="wrong"> define</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <h3>5. What is a feature of Python?</h3>
+        <label><input type="radio" name="q5" value="correct"> Interpreted language</label>
+        <label><input type="radio" name="q5" value="wrong"> Compiled language</label>
+        <label><input type="radio" name="q5" value="wrong"> Low-level language</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <h3>6. What is the correct way to declare a list in Python?</h3>
+        <label><input type="radio" name="q6" value="correct"> my_list = [1, 2, 3]</label>
+        <label><input type="radio" name="q6" value="wrong"> my_list = (1, 2, 3)</label>
+        <label><input type="radio" name="q6" value="wrong"> my_list = {1, 2, 3}</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <h3>7. What is Python commonly used for?</h3>
+        <label><input type="radio" name="q7" value="correct"> Data science and machine learning</label>
+        <label><input type="radio" name="q7" value="wrong"> Embedded systems</label>
+        <label><input type="radio" name="q7" value="wrong"> Game engines</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <h3>8. Which library is commonly used for data analysis in Python?</h3>
+        <label><input type="radio" name="q8" value="correct"> pandas</label>
+        <label><input type="radio" name="q8" value="wrong"> matplotlib</label>
+        <label><input type="radio" name="q8" value="wrong"> pygame</label>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <h3>9. Which is a popular Python web framework?</h3>
+        <label><input type="radio" name="q9" value="correct"> Django</label>
+        <label><input type="radio" name="q9" value="wrong"> Spring</label>
+        <label><input type="radio" name="q9" value="wrong"> Flask</label>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <h3>10. What is the default data type for numbers in Python?</h3>
+        <label><input type="radio" name="q10" value="correct"> int</label>
+        <label><input type="radio" name="q10" value="wrong"> float</label>
+        <label><input type="radio" name="q10" value="wrong"> double</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function submitQuiz() {
+      const form = document.getElementById("quizForm");
+      const answers = form.querySelectorAll('input[type="radio"]:checked');
+      let score = 0;
+
+      // Count correct answers
+      answers.forEach(answer => {
+        if (answer.value === "correct") {
+          score++;
+        }
+      });
+
+      const totalQuestions = form.querySelectorAll('.question').length;
+      const result = document.getElementById("result");
+
+      // Provide positive feedback based on the score
+      if (score === totalQuestions) {
+        result.textContent = `Amazing effort! You scored ${score}/${totalQuestions}. You're a Python expert! 🎉`;
+      } else if (score > totalQuestions / 2) {
+        result.textContent = `Well done! You scored ${score}/${totalQuestions}. Keep exploring Python's versatility! 🌟`;
+      } else {
+        result.textContent = `Nice try! You scored ${score}/${totalQuestions}. Review the basics and come back stronger! 💪`;
+      }
+    }
+  </script>
+</body>
+</html>

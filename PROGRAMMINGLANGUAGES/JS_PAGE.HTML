@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2); /* Soft orange gradient */
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #ff9800, #ffb74d); /* Vibrant orange gradient */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }.back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover {
+      background: #01579b;
+    }
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: left;
+    }
+    .content h2 {
+      color: #ff9800;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .overview {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .overview img {
+      width: 60px;
+      height: 60px;
+    }
+    .roadmap {
+      margin-top: 20px;
+      background: #ffe0b2;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .roadmap h3 {
+      color: #ff9800;
+      margin-bottom: 10px;
+    }
+    .roadmap ul {
+      list-style: none;
+      padding: 0;
+    }
+    .roadmap li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .roadmap li img {
+      width: 40px;
+      height: 40px;
+    }
+    ul.use-cases {
+      list-style: none;
+      padding: 0;
+    }
+    ul.use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+    ul.use-cases li img {
+      width: 40px;
+      height: 40px;
+    }
+    .quiz-section {
+      margin-top: 20px;
+      background: #ffcc80;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .quiz-section h3 {
+      color: #ff9800;
+      margin-bottom: 10px;
+    }
+    .quiz-section button {
+      background: #ff9800;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+    .quiz-section button:hover {
+      background: #f57c00;
+    }
+  </style>
+</head>
+<body>
+  <header><a href="FRONTEND.HTML" class="back-button">← Back</a>
+
+    <h1>JavaScript Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2>Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript Icon">
+      <p>JavaScript is a versatile and dynamic programming language primarily used for creating interactive web applications. It enables developers to implement features like animations, real-time updates, and complex functionalities in web pages. JavaScript is a key technology of the web, along with HTML and CSS.</p>
+    </div>
+
+    <h2>Roadmap to Learn JavaScript</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/javascript-logo.png" alt="Basic Syntax Icon">
+          <p>Learn JavaScript basics like variables, data types, and operators.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/000000/code.png" alt="DOM Icon">
+          <p>Understand the Document Object Model (DOM) to manipulate web pages.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/000000/cloud-sync.png" alt="API Icon">
+          <p>Work with APIs, asynchronous programming, and libraries like React.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Use Cases</h2>
+    <ul class="use-cases">
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/000000/web.png" alt="Web Development Icon">
+        <p>Client-side web development for interactive interfaces.</p>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/000000/server.png" alt="Server Icon">
+        <p>Server-side programming using Node.js.</p>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/000000/ai.png" alt="Automation Icon">
+        <p>Creating web-based automation and applications.</p>
+      </li>
+    </ul>
+
+    <h2>Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools</a></li>
+      <li><a href="https://javascript.info/" target="_blank">JavaScript Info</a> (Recommended)</li>
+      <li><a href="https://www.geeksforgeeks.org/javascript-tutorial/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="https://www.sololearn.com/javascript" target="_blank">SoloLearn</a></li>
+    </ul>
+    <p>*Choose from these excellent resources to master JavaScript and build powerful applications!</p>
+
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+
+
+<button onclick="window.location.href='JS_TEST.HTML'">Start Test</button>
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>

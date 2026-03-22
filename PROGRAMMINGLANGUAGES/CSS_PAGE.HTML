@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0288d1, #03a9f4);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .back-button:hover { background: #01579b; }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: left;
+    }
+    .content h2 {
+      color: #0288d1;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .overview, .roadmap li, .use-cases li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .overview img, .roadmap img, .use-cases img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .roadmap, .use-cases, .quiz-section {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .roadmap { background: #bbdefb; }
+    .use-cases { background: #e3f2fd; }
+    .quiz-section { background: #90caf9; }
+
+    .roadmap h3, .quiz-section h3 {
+      color: #0288d1;
+      margin-bottom: 10px;
+    }
+
+    .roadmap ul, .use-cases ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quiz-section button {
+      background: #0288d1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+    .quiz-section button:hover { background: #0277bd; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="FRONTEND.HTML" class="back-button">← Back</a>
+    <h1>CSS Programming Language</h1>
+  </header>
+
+  <div class="content">
+    <h2>Overview</h2>
+    <div class="overview">
+      <img src="https://img.icons8.com/ios-filled/50/css3.png" alt="CSS Icon">
+      <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of HTML elements. It allows developers to enhance the look and feel of web pages by defining layouts, colors, fonts, animations, and responsive designs. CSS is essential for modern web development.</p>
+    </div>
+
+    <h2>Roadmap to Learn CSS</h2>
+    <div class="roadmap">
+      <h3>Step-by-Step Learning</h3>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="Basic CSS Icon">
+          <p>Understand basic properties like colors, margins, and padding.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/grid.png" alt="Grid Icon">
+          <p>Learn layout techniques like flexbox and grid.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/animation.png" alt="Animation Icon">
+          <p>Explore advanced features like animations and transitions.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Use Cases</h2>
+    <div class="use-cases">
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/design.png" alt="Web Design Icon">
+          <p>Styling web pages and improving user experience.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/smartphone-tablet.png" alt="Responsive Design Icon">
+          <p>Creating responsive websites for multiple devices.</p>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/animation.png" alt="Animation Icon">
+          <p>Enhancing web pages with creative animations.</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a></li>
+      <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> (Recommended)</li>
+      <li><a href="https://www.geeksforgeeks.org/css-tutorials/" target="_blank">GeeksforGeeks</a></li>
+      <li><a href="https://www.sololearn.com/css" target="_blank">SoloLearn</a></li>
+    </ul>
+    <p>*Learn CSS through these helpful resources and enhance your web development skills!</p>
+
+    <div class="quiz-section">
+      <h3>Test Your Knowledge</h3>
+      <button onclick="window.location.href='CSS_TEST.HTML'">Start Test</button>
+    </div>
+  </div>
+</body>
+</html>

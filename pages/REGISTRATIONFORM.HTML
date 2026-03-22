@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+            margin: 0;
+            padding: 0;
+            position: relative; /* Allows positioning of the button */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .btn-home {
+            position: absolute; /* Positioned in the background */
+            top: 20px; /* Top margin */
+            left: 20px; /* Left margin */
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-home:hover {
+            background-color: #1976D2;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+        .form-container {
+            width: 450px;
+            padding: 20px 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        h2 {
+            text-align: center;
+            color: #444;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .gender, .languages {
+            margin-bottom: 15px;
+        }
+        .gender input, .languages input {
+            margin-right: 8px;
+        }
+        .gender label, .languages label {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-submit, .btn-clear {
+            width: 48%;
+            padding: 12px;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+        }
+        .btn-submit:hover {
+            background-color: #45a049;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+        .btn-clear {
+            background-color: #f44336;
+        }
+        .btn-clear:hover {
+            background-color: #e53935;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        function showPopup() {
+            alert("Form successfully submitted!");
+        }
+
+        function clearForm() {
+            document.getElementById("registrationForm").reset();
+        }
+
+        function goHome() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</head>
+<body>
+    <button class="btn-home" onclick="goHome()">Back to Home</button>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="showPopup(); return false;">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <div class="gender">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="languages">
+                <label>Languages Known:</label>
+                <input type="checkbox" id="english" name="languages" value="English">
+                <label for="english">English</label>
+                <input type="checkbox" id="hindi" name="languages" value="Hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" id="telugu" name="languages" value="Telugu">
+                <label for="telugu">Telugu</label>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="button" class="btn-clear" onclick="clearForm()">Clear All</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+

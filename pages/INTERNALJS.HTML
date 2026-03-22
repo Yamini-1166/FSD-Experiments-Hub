@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ffd1a9);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            animation: dropIn 1s ease-in-out;
+            width: 80%;
+            max-width: 500px;
+        }
+        @keyframes dropIn {
+            from {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 28px;
+            color: #ff5483;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            animation: colorPulse 2s infinite;
+        }
+        @keyframes colorPulse {
+            0%, 100% {
+                color: #ff5483;
+            }
+            50% {
+                color: #ffd1a9;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .welcome-btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6b73ff, #9d6bff);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .welcome-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .btn-home {
+            position: fixed; /* Top-left corner to match previous programs */
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #28a745, #60d06c);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-home:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        #welcome-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #6b73ff;
+            animation: fadeInOut 5s ease-in-out;
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        .floating-bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .bubble {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            animation: float 10s infinite linear;
+        }
+        @keyframes float {
+            from {
+                transform: translateY(100vh) scale(0.5);
+            }
+            to {
+                transform: translateY(-100vh) scale(1.2);
+            }
+        }
+        .bubble:nth-child(1) { left: 10%; animation-duration: 12s; }
+        .bubble:nth-child(2) { left: 30%; animation-duration: 15s; }
+        .bubble:nth-child(3) { left: 50%; animation-duration: 8s; }
+        .bubble:nth-child(4) { left: 70%; animation-duration: 11s; }
+        .bubble:nth-child(5) { left: 90%; animation-duration: 14s; }
+    </style>
+</head>
+<body>
+    <div class="floating-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <button class="btn-home" onclick="goHome()">Back to Home</button>
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+        <p>Click the button below to unlock a special animated message!</p>
+        <button class="welcome-btn" onclick="showMessage()">Click Me</button>
+        <div id="welcome-message"></div>
+    </div>
+    <script>
+        function showMessage() {
+            const messageElement = document.getElementById('welcome-message');
+            messageElement.style.display = 'block';
+            messageElement.innerText = 'You’re amazing! Keep shining bright! 🌟';
+            setTimeout(() => {
+                messageElement.style.display = 'none';
+            }, 5000); // Message disappears after 5 seconds
+        }
+
+        function goHome() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #ffecd2, #fcb69f); /* Soft peach gradient background */
+            position: relative;
+        }
+
+        /* Decorative Backdrop */
+        .backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #fcb69f 30%, transparent 90%); /* Subtle radial accent */
+            z-index: -1; /* Keeps it behind other elements */
+        }
+
+        /* Redirect Button */
+        .btn-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #3b8a5a; /* Royal emerald green */
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-home:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Quote Container */
+        .quote-container {
+            text-align: center;
+            background: #fff9f5; /* Light ivory */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .quote-container h1 {
+            font-size: 28px;
+            color: #e96479; /* Warm blush for the heading */
+            margin-bottom: 20px;
+        }
+
+        #quote-display {
+            font-size: 20px;
+            font-weight: bold;
+            color: #874356; /* Elegant rosewood for quotes */
+            margin: 20px 0;
+        }
+
+        .generate-btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e96479, #ffc3a0); /* Blush gradient for buttons */
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .generate-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Backdrop -->
+    <div class="backdrop"></div>
+
+    <!-- Redirect Button -->
+    <button class="btn-home" onclick="goHome()">Back to Home</button>
+
+    <!-- Main Content -->
+    <div class="quote-container">
+        <h1>Inspirational Quotes</h1>
+        <p id="quote-display">Click the button to get inspired!</p>
+        <button class="generate-btn" onclick="generateQuote()">Generate Quote</button>
+    </div>
+
+    <script>
+        // Array of Inspirational Quotes
+        const quotes = [
+            "Believe you can and you're halfway there.",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "Don't watch the clock; do what it does. Keep going.",
+            "The only way to do great work is to love what you do.",
+            "Happiness is not something ready made. It comes from your own actions.",
+            "Start where you are. Use what you have. Do what you can."
+        ];
+
+        // Generate a Random Quote
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quoteDisplay = document.getElementById("quote-display");
+            quoteDisplay.textContent = quotes[randomIndex];
+        }
+
+        // Redirect to Home Function
+        function goHome() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Programming Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #5d636b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0277bd;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .question { margin-bottom: 20px; }
+    .question h3 {
+      margin: 10px 0;
+      color: #0277bd;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    .question label {
+      font-size: 1.05em;
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background: #0277bd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    button:hover { background: #01579b; }
+    .result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #0277bd;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="C_PAGE.HTML" class="back-button">← Back</a>
+    <h1>C Programming Quiz</h1>
+  </header>
+
+  <div class="container">
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. What does 'C' in C Programming stand for?</h3>
+        <label><input type="radio" name="q1" value="correct"> It's not an abbreviation</label>
+        <label><input type="radio" name="q1" value="wrong"> Control</label>
+        <label><input type="radio" name="q1" value="wrong"> Conditional</label>
+      </div>
+
+      <div class="question">
+        <h3>2. What is the output of printf("%d", sizeof(int));?</h3>
+        <label><input type="radio" name="q2" value="wrong"> 2</label>
+        <label><input type="radio" name="q2" value="correct"> 4</label>
+        <label><input type="radio" name="q2" value="wrong"> 8</label>
+      </div>
+
+      <div class="question">
+        <h3>3. Which library is used for input/output in C?</h3>
+        <label><input type="radio" name="q3" value="correct"> stdio.h</label>
+        <label><input type="radio" name="q3" value="wrong"> conio.h</label>
+        <label><input type="radio" name="q3" value="wrong"> string.h</label>
+      </div>
+
+      <div class="question">
+        <h3>4. What does the return 0; statement signify in C?</h3>
+        <label><input type="radio" name="q4" value="correct"> Successful execution</label>
+        <label><input type="radio" name="q4" value="wrong"> Compilation error</label>
+        <label><input type="radio" name="q4" value="wrong"> Loop termination</label>
+      </div>
+
+      <div class="question">
+        <h3>5. Which data type is used to store a single character in C?</h3>
+        <label><input type="radio" name="q5" value="wrong"> int</label>
+        <label><input type="radio" name="q5" value="wrong"> float</label>
+        <label><input type="radio" name="q5" value="correct"> char</label>
+      </div>
+
+      <div class="question">
+        <h3>6. What is the value of uninitialized variables in C?</h3>
+        <label><input type="radio" name="q6" value="wrong"> 0</label>
+        <label><input type="radio" name="q6" value="correct"> Garbage value</label>
+        <label><input type="radio" name="q6" value="wrong"> NULL</label>
+      </div>
+
+      <div class="question">
+        <h3>7. Which operator is used to access a pointer value in C?</h3>
+        <label><input type="radio" name="q7" value="wrong"> &</label>
+        <label><input type="radio" name="q7" value="correct"> *</label>
+        <label><input type="radio" name="q7" value="wrong"> -></label>
+      </div>
+
+      <div class="question">
+        <h3>8. What is the correct syntax for a for loop in C?</h3>
+        <label><input type="radio" name="q8" value="wrong"> for(init; increment; condition)</label>
+        <label><input type="radio" name="q8" value="correct"> for(init; condition; increment)</label>
+        <label><input type="radio" name="q8" value="wrong"> for(condition; init; increment)</label>
+      </div>
+
+      <div class="question">
+        <h3>9. What does the break keyword do in a loop?</h3>
+        <label><input type="radio" name="q9" value="wrong"> Stops current iteration</label>
+        <label><input type="radio" name="q9" value="correct"> Exits the loop</label>
+        <label><input type="radio" name="q9" value="wrong"> Skips the next line</label>
+      </div>
+
+      <div class="question">
+        <h3>10. Which is a correct way to declare an integer pointer in C?</h3>
+        <label><input type="radio" name="q10" value="correct"> int *ptr;</label>
+        <label><input type="radio" name="q10" value="wrong"> int ptr*;</label>
+        <label><input type="radio" name="q10" value="wrong"> pointer&lt;int&gt; ptr;</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function submitQuiz() {
+      const form = document.getElementById("quizForm");
+      const answers = form.querySelectorAll('input[type="radio"]:checked');
+      let score = 0;
+
+      answers.forEach(answer => {
+        if (answer.value === "correct") {
+          score++;
+        }
+      });
+
+      const totalQuestions = form.querySelectorAll('.question').length;
+      const result = document.getElementById("result");
+
+      if (score === totalQuestions) {
+        result.textContent = `Excellent work! You scored ${score}/${totalQuestions}. You're a C Programming pro! 🎉`;
+      } else if (score > totalQuestions / 2) {
+        result.textContent = `Great job! You scored ${score}/${totalQuestions}. Keep practicing and you'll master C Programming! 🌟`;
+      } else {
+        result.textContent = `Good effort! You scored ${score}/${totalQuestions}. Review the topics and give it another shot!`;
+      }
+    }
+  </script>
+</body>
+</html>
